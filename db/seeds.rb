@@ -9,7 +9,13 @@
 
 # Do NOT forget to avoid doublons when recreating entries (here with 'delete_all' method)
 User.delete_all
-User.create!(email: 'admin@admin.com', password:"password", password_confirmation:"password")
+User.create!(name: "big daddy", email: 'admin@admin.com', password:"password", password_confirmation:"password")
+
+
+
+10.times do |i|
+   User.create!(name: "user#{i}", email: "user#{i}@user.com", password: "password", password_confirmation: "password")
+end
 
 
 
