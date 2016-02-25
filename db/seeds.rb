@@ -13,7 +13,7 @@ User.create!(name: "big daddy", email: 'admin@admin.com', password:"password", p
 
 
 
-10.times do |i|
+20.times do |i|
    User.create!(name: "user#{i}", email: "user#{i}@user.com", password: "password", password_confirmation: "password")
 end
 
