@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :likes
+  resources :likes, only: [:create]
   resources :products
   devise_for :users
   resources :users
@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
    root 'users#index'
-
+   get 'like' => 'likes#create', as: :like
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
