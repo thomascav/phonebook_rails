@@ -3,9 +3,20 @@ class UsersController < ApplicationController
 
   # GET /users
   # GET /users.json
+
   def index
-    @users = User.all
+     @users = User.all
+   #   if current_user.sign_in_count == 1
+   #     UserMailer.welcome_email(current_user).deliver_now
+   # end
   end
+  #
+  #  def mailnewsletter
+  #    User.where(subscribe:true).each do |toto|
+  #      UserMailer.newsletter_email(toto).deliver_now
+  #    end
+  # end
+
 
   # GET /users/1
   # GET /users/1.json

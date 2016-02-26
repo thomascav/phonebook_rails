@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :products
   devise_for :users
   resources :users
   get 'page_vide' => 'application#page_vide'

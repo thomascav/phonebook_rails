@@ -16,3 +16,16 @@
 @import "rails_bootstrap_forms";
 @import "dataTables/jquery.dataTables";
 @import "my_css";
+
+
+h1 {
+    text-align: center;
+}
+td {
+    text-align: center;
+}
+th {
+    text-align: center;
+    background-color: #524F4D;
+    color: white;
+}

@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   ### For more info please read :
   ### _Devise github    : github.com/plataformatec/devise
   ### _Devise blog/news : blog.plataformatec.com.br/tag/devise
-  #before_action :authenticate_user! 
+  before_action :authenticate_user! 
 
   def page_vide
   	## /!\   Nb: definir ses pages statiques ici  c'est CACA!!!!
