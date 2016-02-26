@@ -17,6 +17,9 @@ User.create!(name: "big daddy", email: 'admin@admin.com', password:"password", p
    User.create!(name: "user#{i}", email: "user#{i}@user.com", password: "password", password_confirmation: "password")
 end
 
+40.times do |i|
+   Product.create!(name: "produit#{i}")
+end
 
 
 # # Use these variable to  populate text zones
